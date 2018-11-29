@@ -1,0 +1,57 @@
+# Scripts for length based scallop model
+
+# full script - doesn't work
+
+# full script original model 
+	- compiled version of Dougie's code with no changes (weighted sum of squares)
+	- parameterised 
+	- only computed with Nelder-Mead at the moment 
+	- initial fits are decent 
+	- fishing selectivity not great
+	- F too low and not capturing pattern 
+	- Abundance probably a little too low 
+	- Survey catchability is a diagonal straight line from 0.4 to 0.8
+	- Survey predictions are good 
+
+# full script neg log
+	- only change is the introduction of non-length dependent sigma's for negative loglikelihood
+	- parameterised
+	- only computed with Nelder-Mead
+	- initial fits are decent 
+	- fishing selectivity curve not great
+	- F is probably too low, but now captures correct pattern 
+	- Abundance looks better 
+	- Survey catchability is a diagonal straight line around 5.39 - 5.45
+	- aggregated survey is a little worse 
+
+# full script length dependent neg log 
+	- only change is survey evaluation uses length-dependent sigma's for negative loglikelihood
+	- parameterised 
+	- computed with both Nelder-Mead and BFGS
+	- length-structured survey fit is a bit shaky
+	- Fishing selectivity curve looks good
+	- F looks on a good scale and correct pattern 
+	- Abundance is definitely too low 
+	- Survey catchability is a straight line at 1.2 
+	- aggregated survey is OK 
+
+# full script length dependent neg log tensor spline
+	- only change is introduction of tensor spline to replace logistic curve for estimating F
+	- parameterised
+	- computed with Nelder-Mead, BFGS, CG and L-BFGS-B
+	- all four of which have really nice initial fits - the first three all found the same neg log value
+	- F is now very strange though - first year is way too high 
+	- Abundance looks good
+	- survey catchability is a straight line at 0.33
+	- aggregated survey is OK
+
+# full script length dependent neg log tensor spline 2018
+	- an attempt to include the 2017 and 2018 survey data
+	- may not be the best parameters
+	- computed with Nelder-Mead, BFGS, CG and L-BFGS-B
+	
+# full script length dependent neg log tensor spline alternative survey estimate
+	- doesn't work 
+	- trying to avoid using logistic curve for survey selectivity as this has been consistently problematic
+	
+	

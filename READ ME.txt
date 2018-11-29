@@ -1,6 +1,17 @@
-# Scripts for length based scallop model
+##### Data for models
 
-# full script - doesn't work
+	- Obs Lb.csv - Observed landings as aggregated biomass for 2012 - 2016
+	- Obs Lb full years.csv - Observed landings as aggregated biomass for 2012 - 2018
+	- Obs Nsurv.csv - Observed length-structured survey catches (raised count) for 2012 - 2016 
+	- Obs Nsurv all years.csv - Observed length-structured survey catches (raised count) for 2012 - 2018 
+	
+	# additional data - for model evaluation
+	- Obs Effort.csv - Observed effort (kw-days) for 2012 - 2016 
+	- Obs Effort full years.csv - Observed effort (kw-days) for 2012 - 2018 
+	
+
+###### Scripts for length based scallop model
+
 
 # full script original model 
 	- compiled version of Dougie's code with no changes (weighted sum of squares)
